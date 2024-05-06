@@ -1,0 +1,57 @@
+# Data Preprocessing App Documentation
+
+## Overview
+The Data Preprocessing App is a Streamlit application designed to assist users in preprocessing their data. It allows users to upload a CSV file, handle null values, encode categorical columns, and visualize the preprocessed data with histograms or pie charts. Users can also download the preprocessed data as a CSV file.
+
+## Requirements
+- Python 3.8 or higher
+- Streamlit
+- Pandas
+- Matplotlib
+- Seaborn
+- Scikit-learn
+
+## Installation
+1. Ensure you have Python 3.8 or higher installed.
+2. Install the required libraries using pip:
+    pip install streamlit pandas matplotlib seaborn scikit-learn
+3. Clone or download this repository.
+
+## Running the App
+1. Open a terminal or command prompt.
+2. Navigate to the directory containing the `app.py` file.
+3. Run the following command:
+   streamlit run app.py
+   4. The app will open in your default web browser. If it doesn't, you can manually open a browser and navigate to the URL provided in the terminal.
+
+## Using the App
+### Uploading a CSV File
+1. Click on the "Choose a CSV file" button.
+2. Select the CSV file you wish to preprocess.
+3. The first few rows of the uploaded data will be displayed.
+
+### Handling Null Values
+1. Select the method to handle null values from the dropdown menu.
+2. If you choose "Constant", enter the constant value for imputation.
+3. The data with null values handled will be displayed.
+
+### Encoding Categorical Columns
+1. Select the categorical columns you wish to encode.
+2. The data with encoded categorical columns will be displayed.
+
+### Visualizing Data
+1. Select the type of visualization from the dropdown menu.
+2. If you selected "Histogram", choose a numerical feature to visualize.
+3. If you selected "Pie Chart", choose a categorical feature to visualize.
+4. The selected visualization will be displayed.
+
+### Downloading Preprocessed Data
+1. Click on the "Download preprocessed data" button.
+2. The preprocessed data will be downloaded as a CSV file.
+
+## Troubleshooting
+- If you encounter a KeyError when trying to visualize data, ensure that the selected feature exists in the DataFrame and is correctly spelled.
+- If the app does not run, ensure that all required libraries are installed and that you are using a compatible version of Python.
+
+## Contributing
+Contributions to improve the app are welcome. Please submit a pull request with your changes.
